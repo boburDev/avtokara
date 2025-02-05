@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#testimonial-slider").owlCarousel({
         items: 4.5,
-        itemsDesktop: [1024, 3.5],
+        itemsDesktop: [1024, 3],
         itemsDesktopSmall: [980, 2.5],
         itemsTablet: [768, 2],
         itemsTabletSmall: [600, 1],
@@ -14,9 +14,9 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("#otzivi-slider").owlCarousel({
         items: 4,
-        itemsDesktop: [1000, 4],
-        itemsDesktopSmall: [980, 3.5],
-        itemsTablet: [768, 3.5],
+        itemsDesktop: [1000, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [768, 1.5],
         itemsTableSmall: [600, 1.5],
         pagination: true,
         // navigation: true,
