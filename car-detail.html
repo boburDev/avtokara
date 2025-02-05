@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Detail</title>
+
+        <!-- bootstrap js -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.12.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+        ></script>
+
+        <script>
+            // URL parametrlarini o‘qish
+            const urlParams = new URLSearchParams(window.location.search);
+            const image = urlParams.get('image');
+            const name = urlParams.get('name');
+            const price = urlParams.get('price');
+
+            // Sahifada kerakli joylarga ma'lumotni qo‘shish
+            document.getElementById('detail-image').src = image;
+            document.getElementById('detail-name').textContent = name;
+            document.getElementById(
+                'detail-price'
+            ).textContent = `${price} сум/час`;
+        </script>
+    </head>
+    <body>
+        <div
+            class="position-sticky mysticky top-0 left-0 bg-white"
+            style="z-index: 999999"
+        >
+            <nav class="navbar container w-full navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="./assets/images/Logo AB-01 1.png" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html"
+                                    >Главная</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html"
+                                    >Услуги</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html"
+                                    >Отзыв</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html"
+                                    >Контакт</a
+                                >
+                            </li>
+                        </ul>
+                        <div
+                            class="rounded bg-light d-flex px-4 py-2 gap-2 justify-content-center"
+                        >
+                            <div>
+                                <i class="fa-solid fa-phone text-success"></i>
+                            </div>
+                            <div class="fw-bold">+998(99)-868-80-80</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row" style="font-size: 18px">
+                <div class="col-12 col-lg-7">
+                    <div
+                        style="
+                            width: 100%;
+                            height: 450px;
+                            overflow: hidden;
+                            border-radius: 15px;
+                        "
+                        class="bg-light d-flex justify-content-center align-items-center"
+                    >
+                        <img
+                            class="w-75"
+                            src="./assets/images/image-removebg-preview (5) 1.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5">
+                    <div style="font-size: 23px" class="fw-semibold pb-4">
+                        Цены на услуги автокара
+                    </div>
+                    <div class="mt-2">Цена: <span>450,000 сум/час.</span></div>
+                    <div class="mt-2">Минимальный заказ от 4 часов.</div>
+                    <div class="mt-2">
+                        8 часов: 3,400,000 сум (экономия 200,000 сум).
+                    </div>
+                    <div class="mt-2">
+                        Доставка автокара по городу включена в стоимость.
+                    </div>
+                    <div style="font-size: 23px" class="fw-semibold mt-5 pb-4">
+                        Характеристика автокара
+                    </div>
+                    <div class="mt-2">Грузоподъемность до 3500 кг.</div>
+                    <div class="mt-2">Высота подъема до 3000 мм.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-secondary">
+            <!-- ========= -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Аренда Кара 3.5 тонн в Ташкенте
+            </div>
+            <div class="">
+                Аренда кара 3.5 тонн в Ташкенте – это практичное решение для
+                компаний, нуждающихся в надежной технике для выполнения
+                складских и грузоподъемных работ. В нашей компании вы найдете
+                современные и мощные автокары 3.5 тонн, которые помогут вам
+                справляться с различными задачами, будь то разгрузка паллетов
+                или перемещение строительных материалов.
+            </div>
+            <div class="">
+                Предоставляя услуги кара, мы создаем оптимальные условия для
+                вашего бизнеса, предлагая гибкие сроки аренды, индивидуальный
+                подход и высокое качество обслуживания.
+            </div>
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Почему выбирают автокары 3.5 тонн?
+            </div>
+            <div class="">
+                Автокар 3.5 тонн отличается мощностью, маневренностью и
+                универсальностью. Он подходит для самых разных видов
+                деятельности:
+            </div>
+            <ul>
+                <li>
+                    Складская логистика: идеален для перемещения, штабелирования
+                    и загрузки тяжелых товаров.
+                </li>
+                <li>
+                    Строительные объекты: используется для перемещения
+                    материалов средней тяжести, таких как кирпичи, бетонные
+                    блоки и другие строительные грузы.
+                </li>
+                <li>
+                    Промышленность: необходим для работы с оборудованием и
+                    тяжелыми деталями.
+                </li>
+                <li>
+                    Транспортная логистика: позволяет эффективно загружать и
+                    разгружать грузы в транспортных узлах.
+                </li>
+            </ul>
+            <div class="">
+                Использование вилочного погрузчика 3.5 тонн позволяет
+                значительно повысить скорость и производительность работы.
+                Аренда такой техники становится выгодным выбором для компаний,
+                которым важно сэкономить время и средства.
+            </div>
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Преимущества аренда кара 3.5 тонн
+            </div>
+            <div class="">
+                Если вы думаете о приобретении вилочного погрузчика, но
+                сомневаетесь из-за высокой стоимости, аренда кара 3.5 тонн может
+                стать отличной альтернативой. Какие преимущества это дает?
+            </div>
+            <ol>
+                <li>
+                    Экономия бюджета. Вы не тратите большие суммы на покупку
+                    техники, а платите только за фактическое использование.
+                </li>
+                <li>
+                    Гибкость сроков. Мы предлагаем аренду как на несколько
+                    часов, так и на длительный период – от дней до месяцев.
+                </li>
+                <li>
+                    Современное оборудование. Наши автокары 3.5 тонн оснащены
+                    всеми необходимыми функциями для комфортной и безопасной
+                    работы.
+                </li>
+                <li>
+                    Поддержка и обслуживание. В случае поломки мы оперативно
+                    устраняем неисправности или предоставляем замену техники.
+                </li>
+            </ol>
+
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Особенности вилочного погрузчика 3.5 тонн
+            </div>
+            <div class="">
+                Вилочный погрузчик 3.5 тонн – это универсальный инструмент,
+                способный выполнять широкий спектр задач. Его главные
+                преимущества:
+            </div>
+            <ul>
+                <li>
+                    Грузоподъемность до 3.5 тонн. Подходит для работы с большими
+                    объемами тяжелых грузов.
+                </li>
+                <li>
+                    Компактность. Удобно работать на небольших складах с узкими
+                    проходами.
+                </li>
+                <li>
+                    Высокая производительность. Позволяет быстро выполнять
+                    погрузочно-разгрузочные работы.
+                </li>
+                <li>
+                    Многофункциональность. Используется как в закрытых
+                    помещениях, так и на открытых площадках.
+                </li>
+                <li>
+                    Эргономика. Удобное управление и высокая маневренность
+                    обеспечивают комфорт оператора даже при длительной работе.
+                </li>
+            </ul>
+
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Наши услуги аренда кара 3.5 тонн
+            </div>
+            <div class="">
+                Мы предлагаем аренда кара 3.5 тонн в Ташкенте на самых выгодных
+                условиях. Вы получите качественную технику с полным пакетом
+                услуг:
+            </div>
+            <ul>
+                <li>Техническое обслуживание перед началом аренды.</li>
+                <li>Доставка оборудования на место работы.</li>
+                <li>
+                    Возможность аренды вместе с профессиональным оператором.
+                </li>
+            </ul>
+            <div class="">
+                Мы уделяем особое внимание техническому состоянию техники, что
+                гарантирует её надежность и бесперебойную работу на объекте.
+            </div>
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Как оформить аренда кара 3.5 тонн?
+            </div>
+            <div class="">Процесс аренды максимально прост и прозрачен:</div>
+            <ol>
+                <li>
+                    Звонок или заявка. Свяжитесь с нами, чтобы обсудить детали и
+                    требования к технике.
+                </li>
+                <li>
+                    Консультация. Мы поможем подобрать оптимальную модель
+                    вилочного погрузчика и определиться с условиями аренды.
+                </li>
+                <li>
+                    Договор аренды. После согласования всех деталей мы оформляем
+                    договор с учетом сроков и стоимости аренды.
+                </li>
+                <li>
+                    Доставка оборудования. Технику доставляют в указанный срок и
+                    место.
+                </li>
+                <li>
+                    Возврат кара. По окончании аренды мы осматриваем технику и
+                    завершаем процесс.
+                </li>
+            </ol>
+
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Почему выбирают нас?
+            </div>
+            <div class="">
+                Аренда кара 3.5 тонн в нашей компании – это выбор
+                профессионалов. Мы гордимся своим опытом и индивидуальным
+                подходом к каждому клиенту. Наши основные преимущества:
+            </div>
+            <ul>
+                <li>
+                    Прозрачное ценообразование. Нет скрытых комиссий и
+                    дополнительных платежей.
+                </li>
+                <li>
+                    Гарантия качества. Только современные автокары, прошедшие
+                    технический контроль.
+                </li>
+                <li>
+                    Оперативность. Быстрая доставка оборудования в любую точку
+                    Ташкента.
+                </li>
+                <li>
+                    Гибкие условия. Мы адаптируемся к вашим требованиям,
+                    предлагая краткосрочную и долгосрочную аренду.
+                </li>
+                <li>
+                    Профессионализм. Наша команда всегда готова помочь и
+                    ответить на все ваши вопросы.
+                </li>
+            </ul>
+
+            <!-- ======== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Часто задаваемые вопросы об аренде кара 3.5 тонн
+            </div>
+            <div class="fw-semibold text-black">
+                1. На какой срок можно арендовать автокар 3.5 тонн?
+            </div>
+            <div>
+                Вы можете взять вилочный погрузчик в аренду на любой срок: от
+                нескольких часов до месяцев.
+            </div>
+            <div class="fw-semibold text-black">
+                2. Какую информацию нужно предоставить для оформления аренды?
+            </div>
+            <div>
+                Для заключения договора потребуется указать место работы, срок
+                аренды и характер выполняемых задач.
+            </div>
+            <div class="fw-semibold text-black">
+                3. Могу ли я арендовать кар вместе с водителем?
+            </div>
+            <div>
+                Да, мы предоставляем услуги опытных операторов, которые отлично
+                справляются с любой работой.
+            </div>
+            <div class="fw-semibold text-black">
+                4. Включена ли доставка техники в стоимость аренды?
+            </div>
+            <div>
+                Доставка обсуждается индивидуально и может быть включена в общий
+                тариф аренды.
+            </div>
+            <div class="fw-semibold text-black">
+                5. Что делать, если техника выйдет из строя?
+            </div>
+            <div>
+                Мы предоставим замену вилочного погрузчика или оперативно
+                устраним неисправность.
+            </div>
+
+            <!-- ========== -->
+            <div
+                style="font-size: 23px"
+                class="fw-semibold mt-5 pb-2 text-black"
+            >
+                Как сделать заказ?
+            </div>
+            <div>
+                Чтобы заказать аренду вилочного погрузчика 3.5 тонн в Ташкенте,
+                свяжитесь с нами по телефону или оставьте заявку на сайте. Наши
+                специалисты помогут подобрать технику под ваши нужды и обеспечат
+                её оперативную доставку.
+            </div>
+            <div>
+                Не упускайте возможность упростить свою работу с помощью
+                современного автокара 3.5 тонн. Обращайтесь уже сегодня, и мы с
+                удовольствием предоставим технику на самых выгодных условиях.
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="title container">Наши автокары</div>
+
+            <div id="testimonial-slider" class="owl-carousel mt-4">
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image 5.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Автокара 3 тонн
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="./car-detail.html">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image-removebg-preview (3) 1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Автокара 3 тонн
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="#">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image-removebg-preview (6) 1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Автокара 3.5 тонн
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="#">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image-removebg-preview (7) 1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Автокара 7 тонн
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="#">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image-removebg-preview (8) 1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Автокара 10 тонн
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="#">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image 3.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Услуга эвакуатора
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="#">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+                <div class="products-card">
+                    <div
+                        class=""
+                        style="
+                            height: 180px;
+                            overflow: hidden;
+                            display: flex;
+                            align-items: center;
+                        "
+                    >
+                        <img
+                            class="w-100"
+                            src="./assets/images/image 4.png"
+                            alt=""
+                        />
+                    </div>
+                    <div
+                        class="text-center mt-5"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Услуга эвакуатора
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Цена от 400,000 сум/час
+                    </div>
+                    <div
+                        class="text-center mt-1"
+                        style="font-size: 19px; font-weight: 500"
+                    >
+                        Минмальный заказ от 4 часов
+                    </div>
+                    <a href="#">
+                        <button>Подробнее</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row align-items-center gap-3 gap-md-0">
+                    <div
+                        class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start"
+                    >
+                        <img src="./assets/images/Logo AB-01 1@2x.png" alt="" />
+                    </div>
+                    <div class="col-12 col-md-4 d-flex justify-content-center">
+                        <div class="d-flex align-items-center text-white gap-5">
+                            <a
+                                href="#"
+                                style="text-decoration: none; color: white"
+                                >Главная</a
+                            >
+                            <a
+                                href="#"
+                                style="text-decoration: none; color: white"
+                                >Услуги</a
+                            >
+                            <a
+                                href="#"
+                                style="text-decoration: none; color: white"
+                                >Отзыв</a
+                            >
+                            <a
+                                href="#"
+                                style="text-decoration: none; color: white"
+                                >Контакт</a
+                            >
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div
+                            class="d-flex justify-content-center gap-4 gap-md-0 align-items-center flex-md-column align-items-md-end"
+                        >
+                            <div class="text-white">+998(99)-868-80-80</div>
+                            <div class="gap-4 d-flex mt-2">
+                                <a
+                                    href="#"
+                                    style="text-decoration: none; color: white"
+                                >
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    style="text-decoration: none; color: white"
+                                >
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a
+                                    href="#"
+                                    style="text-decoration: none; color: white"
+                                >
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white mt-4">
+                    © Copyright 2024 . All rights reserved
+                </div>
+            </div>
+        </div>
+
+        <!-- bootstrap js -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- my js -->
+        <script src="script.js"></script>
+    </body>
+</html>
