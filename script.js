@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="text-center mt-1" style="font-size: 19px; font-weight: 500">
                         ${product.min_order}
                     </div>
-                    <a href="${product.link}">
+                    <a href="${product.detail_link}">
                         <button>Подробнее</button>
                     </a>
                 `;
