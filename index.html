@@ -266,13 +266,13 @@
               class="text-center mt-5"
               style="font-size: 19px; font-weight: 500"
             >
-              Автокара 3 тонн
+              Автокара 2 тонн
             </div>
             <div
               class="text-center mt-1"
               style="font-size: 19px; font-weight: 500"
             >
-              Цена от 400,000 сум/час
+              Цена от 150,000 сум/час
             </div>
             <div
               class="text-center mt-1"
@@ -305,7 +305,7 @@
               class="text-center mt-1"
               style="font-size: 19px; font-weight: 500"
             >
-              Цена от 400,000 сум/час
+              Цена от 250,000 сум/час
             </div>
             <div
               class="text-center mt-1"
@@ -338,7 +338,7 @@
               class="text-center mt-1"
               style="font-size: 19px; font-weight: 500"
             >
-              Цена от 400,000 сум/час
+              Цена от 300,000 сум/час
             </div>
             <div
               class="text-center mt-1"
@@ -358,6 +358,39 @@
               <img
                 class="w-100"
                 src="./assets/images/image-removebg-preview (7) 1.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="text-center mt-5"
+              style="font-size: 19px; font-weight: 500"
+            >
+              Автокара 5 тонн
+            </div>
+            <div
+              class="text-center mt-1"
+              style="font-size: 19px; font-weight: 500"
+            >
+              Цена от 350,000 сум/час
+            </div>
+            <div
+              class="text-center mt-1"
+              style="font-size: 19px; font-weight: 500"
+            >
+              Минмальный заказ от 4 часов
+            </div>
+            <a href="./car-detail.html">
+              <button>Подробнее</button>
+            </a>
+          </div>
+          <div class="products-card">
+            <div
+              class="car-detail-img"
+              style="overflow: hidden; display: flex; align-items: center"
+            >
+              <img
+                class="w-100"
+                src="./assets/images/image-removebg-preview-new.png"
                 alt=""
               />
             </div>
@@ -404,7 +437,7 @@
               class="text-center mt-1"
               style="font-size: 19px; font-weight: 500"
             >
-              Цена от 400,000 сум/час
+              Цена от 550,000 сум/час
             </div>
             <div
               class="text-center mt-1"
@@ -439,10 +472,13 @@
               class="text-center mt-1"
               style="font-size: 19px; font-weight: 500"
             >
-              Минмальный заказ от 4 часов
+              Один вызов (5 км бесплатно, время ожидания 100 тыс. в час)
             </div>
-            <a href="#contact">
+            <!-- <a href="#contact">
               <button>Контакт</button>
+            </a> -->
+            <a href="./car-detail.html">
+              <button>Подробнее</button>
             </a>
           </div>
           <div class="products-card">
@@ -468,10 +504,13 @@
               class="text-center mt-1"
               style="font-size: 19px; font-weight: 500"
             >
-              Минмальный заказ от 4 часов
+              Один вызов (5 км бесплатно)
             </div>
-            <a href="#contact">
+            <!-- <a href="#contact">
               <button>Контакт</button>
+            </a> -->
+            <a href="./car-detail.html">
+              <button>Подробнее</button>
             </a>
           </div>
         </div>
@@ -555,6 +594,14 @@
             <a href="#" style="position: absolute; top: 10px; right: 10px">
               <img src="./assets/images/Group 1000015707.png" alt="" />
             </a>
+            <!-- <iframe
+              width="420"
+              height="315"
+              src="https://www.youtube.com/embed/6AHrzRVz0fc"
+              frameborder="0"
+              allowfullscreen
+            >
+            </iframe> -->
             Alijonova Zuhra
           </div>
           <div
@@ -729,35 +776,37 @@
         });
       });
 
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault(); // Prevent the default form submission
 
-      document.getElementById('contactForm').addEventListener('submit', async function (event) {
-        event.preventDefault(); // Prevent the default form submission
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
 
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
+          // Send data using fetch API
+          try {
+            const response = await fetch(
+              "https://api.usluga-avtokara.uz/submit",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, phone }),
+              }
+            );
 
-        // Send data using fetch API
-        try {
-          const response = await fetch('https://api.usluga-avtokara.uz/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ name, phone }),
+            const data = await response.text();
+
+            if (data === "Your information has been submitted!") {
+              alert("Информация успешно отправлена!");
+              document.getElementById("contactForm").reset();
+            } else {
+              alert("Ошибка при отправке данных.");
+            }
+          } catch (error) {}
         });
-
-        const data = await response.text();
-
-        if (data === 'Your information has been submitted!') {
-            alert('Информация успешно отправлена!');
-            document.getElementById('contactForm').reset();
-        } else {
-            alert('Ошибка при отправке данных.');
-        }
-        } catch (error) {
-          
-        }
-    });
     </script>
 
     <!-- my js -->
