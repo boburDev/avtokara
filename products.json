@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Автокара 2 тонн",
+    "price": "150,000 сум/час",
+    "min_order": "Минмальный заказ от 4 часов",
+    "image": "./assets/images/image 5.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Автокара 3 тонн",
+    "price": "250,000 сум/час",
+    "min_order": "Минмальный заказ от 4 часов",
+    "image": "./assets/images/image-removebg-preview (3) 1.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Автокара 3.5 тонн",
+    "price": "300,000 сум/час",
+    "min_order": "Минмальный заказ от 4 часов",
+    "image": "./assets/images/image-removebg-preview (6) 1.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Автокара 5 тонн",
+    "price": "350,000 сум/час",
+    "min_order": "Минмальный заказ от 4 часов",
+    "image": "./assets/images/image-removebg-preview (7) 1.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Автокара 7 тонн",
+    "price": "400,000 сум/час",
+    "min_order": "Минмальный заказ от 4 часов",
+    "image": "./assets/images/image-removebg-preview-new.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Автокара 10 тонн",
+    "price": "550,000 сум/час",
+    "min_order": "Минмальный заказ от 4 часов",
+    "image": "./assets/images/image-removebg-preview (8) 1.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Услуга эвакуатора",
+    "price": "400,000 сум/час",
+    "min_order": "Один вызов (5 км бесплатно, время ожидания 100 тыс. в час)",
+    "image": "./assets/images/image 3.png",
+    "detail_link": "./car-detail.html"
+  },
+  {
+    "name": "Услуга эвакуатора",
+    "price": "400,000 сум/час",
+    "min_order": "Один вызов (5 км бесплатно)",
+    "image": "./assets/images/image 4.png",
+    "detail_link": "./car-detail.html"
+  }
+]

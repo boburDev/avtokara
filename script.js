@@ -1,17 +1,4 @@
-$(document).ready(function () {
-    $("#testimonial-slider").owlCarousel({
-        items: 4.5,
-        itemsDesktop: [1024, 3],
 
-        itemsDesktopSmall: [980, 2.5],
-        itemsTablet: [768, 2],
-        itemsTabletSmall: [600, 1],
-        pagination: true,
-        // navigation: true,
-        // navigationText: ["<", ">"],
-        autoPlay: true
-    });
-});
 $(document).ready(function () {
     $("#otzivi-slider").owlCarousel({
         items: 4,
@@ -90,9 +77,51 @@ document.getElementById("contactForm").addEventListener("submit", async function
 });
 
 
-// window.addEventListener("load", function () {
-//     var translateBanner = document.querySelector('.VIpgJd-ZVi9od-ORHb');
-//     if (translateBanner) {
-//         translateBanner.style.display = 'none';
-//     }
-// });
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("products.json")
+        .then(response => response.json())
+        .then(products => {
+            const productList = document.getElementById("product-list");
+
+            products.forEach(product => {
+                const productCard = document.createElement("div");
+                productCard.classList.add("products-card");
+
+                productCard.innerHTML = `
+                    <div class="car-detail-img">
+                        <img class="w-100" src="${product.image}" alt="${product.name}" />
+                    </div>
+                    <div class="text-center mt-5" style="font-size: 19px; font-weight: 500">
+                        ${product.name}
+                    </div>
+                    <div class="text-center mt-1" style="font-size: 19px; font-weight: 500">
+                        ${product.price}
+                    </div>
+                    <div class="text-center mt-1" style="font-size: 19px; font-weight: 500">
+                        ${product.min_order}
+                    </div>
+                    <a href="${product.link}">
+                        <button>Подробнее</button>
+                    </a>
+                `;
+
+                productList.appendChild(productCard);
+            });
+
+            // Ensure jQuery is loaded before using Owl Carousel
+            if (window.jQuery) {
+                $("#product-list").owlCarousel({
+                    items: 4.5,
+                    itemsDesktop: [1024, 3],
+                    itemsDesktopSmall: [980, 2.5],
+                    itemsTablet: [768, 2],
+                    itemsTabletSmall: [600, 1],
+                    pagination: true,
+                    autoPlay: true
+                });
+            } else {
+                console.error("jQuery is not loaded. Make sure to include it before this script.");
+            }
+        })
+        .catch(error => console.error("Ошибка загрузки JSON:", error));
+});

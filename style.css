@@ -173,6 +173,41 @@ body {
     width: 100% !important;
 }
 
+.products {
+    text-align: center;
+    padding: 20px;
+}
+
+.products-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.car-detail-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
 @media screen and (max-width: 768px) {
     .contact .row {
         padding-inline: 0px;
