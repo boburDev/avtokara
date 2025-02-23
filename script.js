@@ -50,3 +50,49 @@ document.addEventListener("DOMContentLoaded", function () {
     changeActiveLink();
     window.addEventListener("scroll", changeActiveLink);
 });
+
+
+const offcanvasLinks = document.querySelectorAll(".offcanvas-close");
+offcanvasLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        const offcanvas = document.querySelector(".offcanvas");
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+        bsOffcanvas.hide(); // Offcanvas-ni yopish
+    });
+});
+
+document.getElementById("contactForm").addEventListener("submit", async function (event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+
+    try {
+        const response = await fetch(
+            "https://api.usluga-avtokara.uz/submit",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, phone }),
+            }
+        );
+        const data = await response.text();
+        console.log(data);
+
+        if (data === "Your information has been submitted!") {
+            alert("Информация успешно отправлена!");
+            document.getElementById("contactForm").reset();
+        } else {
+            alert("Ошибка при отправке данных.");
+        }
+    } catch (error) { }
+});
+
+
+// window.addEventListener("load", function () {
+//     var translateBanner = document.querySelector('.VIpgJd-ZVi9od-ORHb');
+//     if (translateBanner) {
+//         translateBanner.style.display = 'none';
+//     }
+// });

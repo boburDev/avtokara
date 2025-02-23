@@ -6,7 +6,37 @@
 }
 body {
     font-family: sans-serif;
+    top: 0px !important;
 }
+
+.skiptranslate > iframe {
+    display: none !important;
+}
+.skiptranslate > iframe > table {
+    display: none !important;
+}
+
+.google-translate {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.goog-te-gadget-simple,
+.goog-te-gadget-simple span a span {
+    border: none !important;
+}
+.goog-te-gadget-simple img {
+    display: none !important;
+}
+.goog-te-gadget-simple span {
+    font-size: 16px !important;
+}
+
 .myContainer {
     max-width: 1320px;
 }
@@ -23,7 +53,7 @@ body {
     font-weight: bold;
 }
 .navbar {
-    padding: 8px 0;
+    padding: 5px 0;
     position: sticky;
     top: 0;
     left: 0;
