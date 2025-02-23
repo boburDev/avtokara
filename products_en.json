@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Forklift 2 tons",
+    "price": "150,000 UZS/hour",
+    "min_order": "Minimum order of 4 hours",
+    "image": "./assets/images/image 5.png",
+    "detail_link": "./Details/car1.html"
+  },
+  {
+    "name": "Forklift 3 tons",
+    "price": "250,000 UZS/hour",
+    "min_order": "Minimum order of 4 hours",
+    "image": "./assets/images/image-removebg-preview (3) 1.png",
+    "detail_link": "./Details/car2.html"
+  },
+  {
+    "name": "Forklift 3.5 tons",
+    "price": "300,000 UZS/hour",
+    "min_order": "Minimum order of 4 hours",
+    "image": "./assets/images/image-removebg-preview (6) 1.png",
+    "detail_link": "./Details/car3.html"
+  },
+  {
+    "name": "Forklift 5 tons",
+    "price": "350,000 UZS/hour",
+    "min_order": "Minimum order of 4 hours",
+    "image": "./assets/images/image-removebg-preview (7) 1.png",
+    "detail_link": "./Details/car4.html"
+  },
+  {
+    "name": "Forklift 7 tons",
+    "price": "400,000 UZS/hour",
+    "min_order": "Minimum order of 4 hours",
+    "image": "./assets/images/image-removebg-preview-new.png",
+    "detail_link": "./Details/car5.html"
+  },
+  {
+    "name": "Forklift 10 tons",
+    "price": "550,000 UZS/hour",
+    "min_order": "Minimum order of 4 hours",
+    "image": "./assets/images/image-removebg-preview (8) 1.png",
+    "detail_link": "./Details/car6.html"
+  },
+  {
+    "name": "Tow truck service",
+    "price": "400,000 UZS/hour",
+    "min_order": "One call (5 km free, waiting time 100,000 per hour)",
+    "image": "./assets/images/image 3.png",
+    "detail_link": "./Details/car7.html"
+  },
+  {
+    "name": "Tow truck service",
+    "price": "400,000 UZS/hour",
+    "min_order": "One call (5 km free)",
+    "image": "./assets/images/image 4.png",
+    "detail_link": "./Details/car8.html"
+  }
+]

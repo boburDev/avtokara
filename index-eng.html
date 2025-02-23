@@ -1,3 +1,5 @@
+<!-- REAL CODE -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -85,30 +87,86 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-5">
                 <li class="nav-item">
-                  <a class="nav-link offcanvas-close" href="#home">Главная</a>
+                  <a class="nav-link offcanvas-close" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link offcanvas-close" href="#uslugi">Услуги</a>
+                  <a class="nav-link offcanvas-close" href="#uslugi"
+                    >Services</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link offcanvas-close" href="#otzivi">Отзыв</a>
+                  <a class="nav-link offcanvas-close" href="#otzivi">Review</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link offcanvas-close" href="#contact"
-                    >Контакт</a
+                    >Contact</a
                   >
                 </li>
               </ul>
               <div class="d-flex gap-2">
                 <div
-                  class="rounded bg-light d-flex px-4 py-2 gap-2 justify-content-center"
+                  class="rounded bg-light d-flex px-4 pt-3 gap-2 justify-content-center align-content-center"
+                  style="height: 50px; margin-top: 10px"
                 >
                   <div>
                     <i class="fa-solid fa-phone text-success"></i>
                   </div>
-                  <a href="tel:+998998688080" class="fw-bold text-decoration-none text-dark">+998(99)-868-80-80</a>
+                  <a
+                    href="tel:+998998688080"
+                    class="fw-bold text-decoration-none text-dark"
+                    >+998(99)-868-80-80</a
+                  >
                 </div>
-                <div id="language" class="language"></div>
+
+                <!-- Language -->
+                <div id="language" class="language dropdown">
+                  <button
+                    class="btn btn-outline-dark dropdown-toggle"
+                    type="button"
+                    id="languageDropdown"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    style="width: 130px; height: 50px"
+                  >
+                    <i class="fa-solid fa-globe" style="padding-right: 5px"></i>
+                    Language
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li>
+                      <a class="dropdown-item" href="./index-eng.html">
+                        <img
+                          src="./assets/images/en.png"
+                          width="30"
+                          height="30"
+                          alt="ENG"
+                        />
+                        ENG
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./index.html">
+                        <img
+                          src="./assets/images/ru.png"
+                          width="30"
+                          height="30"
+                          alt="RU"
+                        />
+                        RU
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./index-uzb.html">
+                        <img
+                          src="./assets/images/uz.png"
+                          width="30"
+                          height="30"
+                          alt="UZB"
+                        />
+                        UZB
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -120,26 +178,28 @@
       <!-- header -->
       <div class="row banner">
         <div class="col-12 col-lg-6">
-          <h1 class="text-center text-lg-start">Услуги кары в Ташкенте</h1>
+          <h1 class="text-center text-lg-start">Car services in Tashkent</h1>
           <p
             class="text-secondary text-center text-lg-start"
             style="font-size: 17px"
           >
-            Предоставляем вилочный погрузчик в аренду с водителем
+            We provide forklift rental with driver
           </p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <ul class="text-secondary" style="font-size: 17px">
               <li>
-                Подача в
-                <span class="text-black fw-bold">день заказа</span>
+                Submit to
+                <span class="text-black fw-bold">day of order</span>
               </li>
               <li>
-                Работаем<span class="text-black fw-bold"> круглосуточно</span>
+                We are working<span class="text-black fw-bold">
+                  24 hours a day</span
+                >
               </li>
 
               <li>
-                Форма оплаты
-                <span class="text-black fw-bold">любая</span>
+                Payment form
+                <span class="text-black fw-bold">any</span>
               </li>
             </ul>
           </div>
@@ -155,7 +215,7 @@
 
       <!-- service -->
       <div class="service mt-5 pt-5">
-        <div class="title">Почему мы?</div>
+        <div class="title">Why us?</div>
         <div class="mt-5">
           <div class="row gap-4 gap-sm-0 gap-lg-0">
             <div class="col-12 col-md-6 col-lg-3">
@@ -169,14 +229,14 @@
                 </div>
                 <div>
                   <div class="fw-semibold" style="font-size: 20px">
-                    Быстрая подача
+                    Fast serve
                   </div>
                   <div
                     class="text-secondary"
                     style="line-height: 30px; font-size: 17px"
                   >
-                    Наши погрузчики всегда рядом. Среднее время подачи за 2
-                    часа, рекордное 30 минут!
+                    Our forklifts are always nearby. Average delivery time is 2
+                    hours, record 30 minutes!
                   </div>
                 </div>
               </div>
@@ -192,14 +252,14 @@
                 </div>
                 <div>
                   <div class="fw-semibold" style="font-size: 20px">
-                    Недорого
+                    Inexpensive
                   </div>
                   <div
                     class="text-secondary"
                     style="line-height: 30px; font-size: 17px"
                   >
-                    Благодаря своему парку эвакуаторов в разных частях города,
-                    мы обеспечиваем привлекательные цены.
+                    Thanks to our fleet of tow trucks in different parts of the
+                    city, we provide attractive prices.
                   </div>
                 </div>
               </div>
@@ -215,14 +275,14 @@
                 </div>
                 <div>
                   <div class="fw-semibold" style="font-size: 20px">
-                    Фиксированная цена
+                    Fixed price
                   </div>
                   <div
                     class="text-secondary"
                     style="line-height: 30px; font-size: 17px"
                   >
-                    Фиксированная стоимость вызова эвакуатора по всему Ташкенту,
-                    без «сюрпризов» по приезду.
+                    Fixed cost for calling a tow truck throughout Tashkent, no
+                    “surprises” upon arrival.
                   </div>
                 </div>
               </div>
@@ -237,13 +297,15 @@
                   />
                 </div>
                 <div>
-                  <div class="fw-semibold" style="font-size: 20px">Удобно</div>
+                  <div class="fw-semibold" style="font-size: 20px">
+                    Comfortable
+                  </div>
                   <div
                     class="text-secondary"
                     style="line-height: 30px; font-size: 17px"
                   >
-                    Любая форма оплаты. Работаем круглосуточно. Без выходных.
-                    Бережная транспортировка.
+                    Any form of payment. We work around the clock. No days off.
+                    Careful transportation.
                   </div>
                 </div>
               </div>
@@ -256,14 +318,14 @@
 
     <!-- products -->
     <div class="products">
-        <div class="title container">Наши автокары</div>
-        <div class="container">
-            <div id="product-list" class="owl-carousel mt-4"></div>
-        </div>
+      <div class="title container">Our trucks</div>
+      <div class="container">
+        <div id="product-list" class="owl-carousel mt-4"></div>
+      </div>
     </div>
 
     <!-- arenda -->
-    <div class="container arenda">
+    <!-- <div class="container arenda">
       <div class="title">Аренда погрузчика</div>
       <div class="row mt-4 align-items-center">
         <div class="col-12 col-lg-6">
@@ -316,96 +378,181 @@
         </div>
       </div>
       <section id="otzivi" style="margin-bottom: 50px"></section>
+    </div> -->
+    <div class="container arenda">
+      <div class="title">Forklift rental</div>
+      <div class="row mt-4 align-items-center">
+        <div class="col-12 col-lg-6">
+          <div class="text-secondary">
+            <span class="text-black fw-semibold">Forklift rental</span>
+            is a convenient solution for construction and warehouse work.
+          </div>
+          <div class="text-secondary">
+            Companies offer different types of forklifts for rent: forklifts,
+            front-end and telescopic.
+          </div>
+          <div class="text-secondary">
+            Forklift rental helps save money on purchasing and servicing
+            equipment.
+          </div>
+          <div class="text-secondary">
+            You can rent a forklift for any period of time - from several hours
+            to several months.
+          </div>
+          <div class="text-secondary">
+            Before renting, it is important to choose equipment suitable for
+            specific tasks.
+          </div>
+          <div class="text-secondary">
+            The rental price may include fuel, maintenance, and insurance.
+          </div>
+          <div class="text-secondary">
+            A qualified operator with a license is required to operate the
+            forklift.
+          </div>
+          <div class="text-secondary">
+            Many companies provide forklifts for rent together with an operator.
+          </div>
+          <div class="text-secondary">
+            Forklifts are often rented for loading and unloading operations in
+            warehouses.
+          </div>
+          <div class="text-secondary">
+            Renting a forklift is beneficial for seasonal or one-time work.
+          </div>
+          <div class="text-secondary">
+            Before signing the rental agreement, you need to check the technical
+            condition of the machine.
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <img src="./assets/images/image 1.png" style="width: 100%" alt="" />
+        </div>
+      </div>
+      <section id="otzivi" style="margin-bottom: 50px"></section>
     </div>
-
     <!-- otzivi -->
     <div class="otzivi container pb-5 mb-5">
-      <div class="title">Отзывы</div>
+      <div class="title">Reviews</div>
       <div class="mt-5">
         <div id="otzivi-slider" class="owl-carousel">
-          <div
-            class="otzivi-card"
-            style="
-              opacity: 0.9;
-              background-image: linear-gradient(
-                  0.16deg,
-                  rgba(0, 0, 0, 1),
-                  rgba(255, 255, 255, 0) 70.85%
-                ),
-                url(./assets/images/Rectangle\ 17.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-            "
-          >
-            <a href="#" style="position: absolute; top: 10px; right: 10px">
-              <img src="./assets/images/Group 1000015707.png" alt="" />
-            </a>
-            <!-- <iframe
-              width="420"
-              height="315"
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
               src="https://www.youtube.com/embed/6AHrzRVz0fc"
               frameborder="0"
               allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
             >
-            </iframe> -->
-            Alijonova Zuhra
+            </iframe>
           </div>
-          <div
-            class="otzivi-card"
-            style="
-              opacity: 0.9;
-              background-image: linear-gradient(
-                  0.16deg,
-                  rgba(0, 0, 0, 1),
-                  rgba(255, 255, 255, 0) 70.85%
-                ),
-                url(./assets/images/Rectangle\ 17.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-            "
-          >
-            <a href="#" style="position: absolute; top: 10px; right: 10px">
-              <img src="./assets/images/Group 1000015707.png" alt="" />
-            </a>
-            Alijonova Zuhra
+
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/ukidrqIIZAM"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
+            >
+            </iframe>
           </div>
-          <div
-            class="otzivi-card"
-            style="
-              opacity: 0.9;
-              background-image: linear-gradient(
-                  0.16deg,
-                  rgba(0, 0, 0, 1),
-                  rgba(255, 255, 255, 0) 70.85%
-                ),
-                url(./assets/images/Rectangle\ 17.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-            "
-          >
-            <a href="#" style="position: absolute; top: 10px; right: 10px">
-              <img src="./assets/images/Group 1000015707.png" alt="" />
-            </a>
-            Alijonova Zuhra
+
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/yQGfJdn_a9A"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
+            >
+            </iframe>
           </div>
-          <div
-            class="otzivi-card"
-            style="
-              opacity: 0.9;
-              background-image: linear-gradient(
-                  0.16deg,
-                  rgba(0, 0, 0, 1),
-                  rgba(255, 255, 255, 0) 70.85%
-                ),
-                url(./assets/images/Rectangle\ 17.png);
-              background-repeat: no-repeat;
-              background-size: cover;
-            "
-          >
-            <a href="#" style="position: absolute; top: 10px; right: 10px">
-              <img src="./assets/images/Group 1000015707.png" alt="" />
-            </a>
-            Alijonova Zuhra
+
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/qh1vEabAhIA"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
+            >
+            </iframe>
+          </div>
+
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/G5JGOqn4V0E"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
+            >
+            </iframe>
+          </div>
+
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/McvLpyxd7J0"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
+            >
+            </iframe>
+          </div>
+
+          <div class="otzivi-card" style="margin-right: 10px">
+            <iframe
+              src="https://www.youtube.com/embed/6AHrzRVz0fc"
+              frameborder="0"
+              allowfullscreen
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+              "
+            >
+            </iframe>
           </div>
         </div>
       </div>
@@ -420,12 +567,12 @@
         </div>
         <div class="col-12 col-lg-6 d-flex justify-content-center">
           <div class="contact-form">
-            <div class="text">Контакт</div>
+            <div class="text">Contact</div>
             <form id="contactForm" class="mt-5">
               <div class="">
-                <label for="name" class="form-label">Имя</label>
+                <label for="name" class="form-label">Name</label>
                 <input
-                  placeholder="Jamshid Axmedov"
+                  placeholder="John Doe"
                   type="text"
                   class="form-control"
                   id="name"
@@ -433,7 +580,7 @@
                 />
               </div>
               <div class="mb-3 mt-5">
-                <label for="phone" class="form-label">Телефон номер</label>
+                <label for="phone" class="form-label">Phone number</label>
                 <input
                   placeholder="+998 (99) 123 45 67"
                   type="number"
@@ -443,7 +590,7 @@
                 />
               </div>
 
-              <button type="submit" class="btn-dark">Отправлять</button>
+              <button type="submit" class="btn-dark">Send</button>
             </form>
           </div>
         </div>
@@ -464,16 +611,16 @@
           <div class="col-12 col-md-4 d-flex justify-content-center">
             <div class="d-flex align-items-center text-white gap-5">
               <a href="#home" style="text-decoration: none; color: white"
-                >Главная</a
+                >Home</a
               >
               <a href="#uslugi" style="text-decoration: none; color: white"
-                >Услуги</a
+                >Services</a
               >
               <a href="#otzivi" style="text-decoration: none; color: white"
-                >Отзыв</a
+                >Review</a
               >
               <a href="#contact" style="text-decoration: none; color: white"
-                >Контакт</a
+                >Contact</a
               >
             </div>
           </div>
@@ -503,9 +650,12 @@
     </div>
 
     <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-    
     <!-- my js -->
     <script src="script.js"></script>
   </body>

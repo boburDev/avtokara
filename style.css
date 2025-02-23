@@ -1,233 +1,261 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: all 0.3s;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
 }
 body {
-    font-family: sans-serif;
-    top: 0px !important;
+  font-family: sans-serif;
+  top: 0px !important;
 }
 
 .skiptranslate > iframe {
-    display: none !important;
+  display: none !important;
 }
 .skiptranslate > iframe > table {
-    display: none !important;
+  display: none !important;
 }
 
 .google-translate {
-    border: 1px solid #ddd;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
 
 .goog-te-gadget-simple,
 .goog-te-gadget-simple span a span {
-    border: none !important;
+  border: none !important;
 }
 .goog-te-gadget-simple img {
-    display: none !important;
+  display: none !important;
 }
 .goog-te-gadget-simple span {
-    font-size: 16px !important;
+  font-size: 16px !important;
 }
 
 .myContainer {
-    max-width: 1320px;
+  max-width: 1320px;
 }
 .navbar-scrolled {
-    box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.455);
+  box-shadow: 0px 2px 7px -1px rgba(0, 0, 0, 0.455);
 }
 .nav-link.active {
-    border-bottom: 2px solid black;
-    font-weight: bold;
+  border-bottom: 2px solid black;
+  font-weight: bold;
 }
 
 .title {
-    font-size: 36px;
-    font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
 .navbar {
-    padding: 5px 0;
-    position: sticky;
-    top: 0;
-    left: 0;
-    background: white;
-    z-index: 99999;
+  padding: 5px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 99999;
 }
 
 .nav-link {
-    font-size: 18px;
+  font-size: 18px;
 }
 .navbar-brand img {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 .banner h1 {
-    font-size: 50px;
-    font-weight: 600;
+  font-size: 50px;
+  font-weight: 600;
 }
 .banner {
-    align-items: center;
+  align-items: center;
 }
 
 .products {
-    margin-top: 120px;
-    background: #f5f5f5;
-    padding: 40px;
-    z-index: 0;
+  margin-top: 120px;
+  background: #f5f5f5;
+  padding: 40px;
+  z-index: 0;
 }
 
 .arenda {
-    padding-block: 120px;
+  padding-block: 120px;
 }
 .arenda .text-secondary {
-    font-size: 20px;
-    margin-top: 5px;
+  font-size: 20px;
+  margin-top: 5px;
 }
 .contact {
-    padding-block: 20px;
+  padding-block: 20px;
 }
 .contact .row {
-    padding-inline: 60px;
+  padding-inline: 60px;
 }
 .contact-form {
-    box-shadow: 0px 0px 42.6px 5px rgba(0, 0, 0, 0.05);
-    border-radius: 25px;
-    background: white;
-    padding: 40px;
-    width: 100%;
+  box-shadow: 0px 0px 42.6px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  background: white;
+  padding: 40px;
+  width: 100%;
 }
 .contact-form .text {
-    font-size: 36px;
-    font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
+
 .contact-form form input {
-    background: rgba(244, 244, 244, 1);
-    height: 60px;
-    border: rgba(244, 244, 244, 1);
-    border-radius: 15px;
-    padding: 10px 25px;
+  background: rgba(244, 244, 244, 1);
+  height: 60px;
+  border: rgba(244, 244, 244, 1);
+  border-radius: 15px;
+  padding: 10px 25px;
+  outline: none;
+  box-shadow: none;
 }
+
+.contact-form form input:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(244, 244, 244, 1);
+}
+
 .contact-form form button {
-    height: 60px;
-    border-radius: 15px;
-    background: rgba(40, 40, 40, 1);
-    color: white;
-    width: 100%;
-    border: none;
-    font-size: 20px;
-    margin-top: 80px;
+  height: 60px;
+  border-radius: 15px;
+  background: rgba(40, 40, 40, 1);
+  color: white;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  margin-top: 80px;
 }
 .footer {
-    margin-top: 100px;
-    background: #282828;
-    padding: 40px 0 20px 0;
+  margin-top: 100px;
+  background: #282828;
+  padding: 40px 0 20px 0;
 }
 .footer i {
-    font-size: 20px;
+  font-size: 20px;
 }
 .footer img {
-    width: 90px;
-    height: 90px;
+  width: 90px;
+  height: 90px;
 }
 
 .products-card {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  min-height: 529px;
 }
 
 .products-card button {
-    width: 100%;
-    height: 42px;
-    background-color: rgba(40, 40, 40, 1);
-    border-radius: 10px;
-    color: white;
-    font-size: 18px;
-    border: none;
-    margin-top: 20px;
+  width: 100%;
+  height: 42px;
+  background-color: rgba(40, 40, 40, 1);
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  margin-top: 20px;
 }
 .otzivi-card {
-    padding: 15px;
-    border-radius: 15px;
-    height: 400px;
-    margin: 30px;
-    color: white;
-    display: flex;
-    align-items: end;
-    font-size: 18px;
-    position: relative;
+  padding: 15px;
+  border-radius: 15px;
+  height: 400px;
+  margin: 30px;
+  color: white;
+  display: flex;
+  align-items: end;
+  font-size: 18px;
+  position: relative;
 }
 .car-detail-img {
-    height: 200px;
+  height: 200px;
 }
 /* media */
 .offcanvas {
-    width: 100% !important;
+  width: 100% !important;
 }
 
 .products {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
 
 .products-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 250px;
-    display: inline-block;
-    margin: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .car-detail-img img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-
 
 @media screen and (max-width: 768px) {
-    .contact .row {
-        padding-inline: 0px;
-    }
-    .contact-form {
-        width: 400px;
-    }
+  .contact .row {
+    padding-inline: 0px;
+  }
+  .contact-form {
+    width: 400px;
+  }
 
-    .navbar-brand img {
-        width: 60px;
-        height: 60px;
-    }
-    .banner h1 {
-        font-size: 33px;
-        font-weight: 600;
-    }
+  .navbar-brand img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner h1 {
+    font-size: 33px;
+    font-weight: 600;
+  }
 }
 @media screen and (max-width: 560px) {
-    .contact-form {
-        width: 100%;
-        padding: 25px;
-    }
+  .contact-form {
+    width: 100%;
+    padding: 25px;
+  }
+}
+
+#language .dropdown-menu {
+  width: 130px !important; /* Set fixed width */
+  min-width: 130px !important; /* Ensure it does not auto-expand */
+  text-align: center; /* Center align text */
+}
+
+#language .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Adjust spacing between flag and text */
+  padding: 8px 10px;
+}
+
+/* IFRAME */
+.otzivi-card {
+  margin-right: 20px; /* Adds 20px space between each item */
 }
