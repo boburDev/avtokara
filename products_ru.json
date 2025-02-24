@@ -44,15 +44,18 @@
   {
     "name": "Услуга эвакуатора",
     "price": "400,000 сум/час",
-    "min_order": "Один вызов (5 км бесплатно, время ожидания 100 тыс. в час)",
+    "min_order": "Один вызов (5 км бесплатно)",
     "image": "./assets/images/image 3.png",
-    "detail_link": "./Details/car7.html"
+    "detail_link": "#evacuator-service",
+    "type": "button",
+    "category": "car_deliver"
   },
   {
     "name": "Услуга эвакуатора",
     "price": "400,000 сум/час",
     "min_order": "Один вызов (5 км бесплатно)",
     "image": "./assets/images/image 4.png",
-    "detail_link": "./Details/car8.html"
+    "detail_link": "#evacuator-service",
+    "type": "button"
   }
 ]

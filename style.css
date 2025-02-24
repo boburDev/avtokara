@@ -147,12 +147,30 @@ body {
   height: 90px;
 }
 
+/* PRODUCTS */
+
+.products {
+  text-align: center;
+  padding: 20px;
+  gap: 10px;
+}
+
 .products-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
   background: white;
   border-radius: 15px;
-  padding: 20px;
   margin: 10px;
-  min-height: 529px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  height: 480px;
+}
+
+.products-card img {
+  max-width: 100%;
+  height: auto;
 }
 
 .products-card button {
@@ -177,26 +195,14 @@ body {
   position: relative;
 }
 .car-detail-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
 }
 /* media */
 .offcanvas {
   width: 100% !important;
-}
-
-.products {
-  text-align: center;
-  padding: 20px;
-}
-
-.products-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  width: 250px;
-  display: inline-block;
-  margin: 10px;
 }
 
 .car-detail-img img {
@@ -235,6 +241,24 @@ button:hover {
     font-weight: 600;
   }
 }
+@media screen and (max-width: 768px) {
+  .contact .row {
+    padding-inline: 0px;
+  }
+  .contact-form {
+    width: 400px;
+  }
+
+  .navbar-brand img {
+    width: 60px;
+    height: 60px;
+  }
+  .banner h1 {
+    font-size: 33px;
+    font-weight: 600;
+  }
+}
+@
 @media screen and (max-width: 560px) {
   .contact-form {
     width: 100%;
@@ -242,6 +266,7 @@ button:hover {
   }
 }
 
+/* LANGUAGE */
 #language .dropdown-menu {
   width: 130px !important; /* Set fixed width */
   min-width: 130px !important; /* Ensure it does not auto-expand */
@@ -255,7 +280,36 @@ button:hover {
   padding: 8px 10px;
 }
 
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* Bayroqlar orasidagi masofa */
+}
+
+.language a {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.language a:hover {
+  transform: scale(1.1); /* Hover qilinganda ozgina kattalashadi */
+}
+
 /* IFRAME */
 .otzivi-card {
   margin-right: 20px; /* Adds 20px space between each item */
+}
+
+/* STYLED CARD */
+.product-item[data-category="car_deliver"] {
+  max-width: 450px;
+}
+
+.product-item[data-category="car_deliver"] h3 {
+  margin-top: 100px; /* To‘q to'q sariq rang */
+}
+
+.product-item[data-category="car_deliver"] {
+  color: red; /* To‘q to'q sariq rang */
 }

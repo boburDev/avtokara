@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abduraxim Building</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/Logo AB-01 1.png"
+    />
+
+    <!-- bootstrap js -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+
+    <script>
+      // URL parametrlarini o‘qish
+      const urlParams = new URLSearchParams(window.location.search);
+      const image = urlParams.get("image");
+      const name = urlParams.get("name");
+      const price = urlParams.get("price");
+
+      // Sahifada kerakli joylarga ma'lumotni qo‘shish
+      document.getElementById("detail-image").src = image;
+      document.getElementById("detail-name").textContent = name;
+      document.getElementById("detail-price").textContent = `${price} сум/час`;
+    </script>
+  </head>
+  <body>
+    <div
+      class="position-sticky my_navbar mysticky top-0 left-0 bg-white"
+      style="z-index: 999999"
+    >
+      <nav class="navbar container w-full navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index-eng.html">
+            <img src="../assets/images/Logo AB-01 1@2x.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="../index-eng.html">
+                <img src="./assets/images/Logo AB-01 1.png" alt="" />
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-5">
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-eng.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-eng.html"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-eng.html"
+                    >Review</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-eng.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex gap-2">
+                <div
+                  class="rounded bg-light d-flex px-4 py-2 gap-2 justify-content-center"
+                >
+                  <div>
+                    <i class="fa-solid fa-phone text-success"></i>
+                  </div>
+                  <div class="fw-bold">+998(99)-868-80-80</div>
+                </div>
+                <div id="language" class="language">
+                  <a href="./car3_uz.html">
+                    <img
+                      src="../assets/images/uz.png"
+                      width="50"
+                      height="40"
+                      alt="UZB"
+                    />
+                  </a>
+                  <a href="#">
+                    <img
+                      src="../assets/images/en.png"
+                      width="40"
+                      height="30"
+                      alt="ENG"
+                    />
+                  </a>
+                  <a href="./car3.html">
+                    <img
+                      src="../assets/images/ru.png"
+                      width="50"
+                      height="40"
+                      alt="RU"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row" style="font-size: 18px">
+        <div class="col-12 col-lg-7">
+          <div
+            style="
+              width: 100%;
+              height: 450px;
+              overflow: hidden;
+              border-radius: 15px;
+            "
+            class="bg-light d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="w-75"
+              src="../assets/images/image-removebg-preview (6) 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div style="font-size: 23px" class="fw-semibold pb-4">
+            Prices for forklift services
+          </div>
+          <div class="mt-2">Price: <span>300,000 sum/hour.</span></div>
+          <div class="mt-2">Minimum order from 4 hours.</div>
+          <div class="mt-2">8 hours: 3,400,000 sum (saving 200,000 sum).</div>
+          <div class="mt-2">
+            Forklift delivery within the city is included in the price.
+          </div>
+          <div style="font-size: 23px" class="fw-semibold mt-5 pb-4">
+            Truck specifications
+          </div>
+          <div class="mt-2">Loading capacity up to 3500 kg.</div>
+          <div class="mt-2">Lifting height up to 3000 mm.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-secondary">
+      <!-- ========= -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        3.5-Ton Forklift Rental in Tashkent
+      </div>
+      <div class="">
+        Renting a 2-ton forklift in Tashkent is a practical solution for
+        companies in need of reliable equipment for warehouse and lifting
+        operations. Our company provides modern and powerful 2-ton forklifts
+        that help you handle various tasks, whether it's unloading pallets or
+        transporting construction materials.
+      </div>
+      <div class="">
+        By offering forklift rental services, we create optimal conditions for
+        your business, providing flexible rental terms, a personalized approach,
+        and high-quality service.
+      </div>
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Why Choose a 3.5-Ton Forklift?
+      </div>
+      <div class="">
+        A 2-ton forklift is powerful, maneuverable, and versatile. It is
+        suitable for a variety of industries:
+      </div>
+      <ul>
+        <li>
+          Warehouse logistics: Ideal for moving, stacking, and loading heavy
+          goods.
+        </li>
+        <li>
+          Construction sites: Used for transporting medium-weight materials such
+          as bricks, concrete blocks, and other building supplies.
+        </li>
+        <li>
+          Industrial sector: Essential for handling equipment and heavy parts.
+        </li>
+        <li>
+          Transport logistics: Efficiently loads and unloads cargo at transport
+          hubs.
+        </li>
+      </ul>
+      <div class="">
+        Using a 2-ton forklift significantly improves work speed and
+        productivity. Renting such equipment is a cost-effective choice for
+        businesses looking to save time and money.
+      </div>
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Benefits of Renting a 3.5-Ton Forklift
+      </div>
+      <div class="">
+        If you are considering buying a forklift but are hesitant due to the
+        high cost, renting a 2-ton forklift can be a great alternative. What are
+        the advantages?
+      </div>
+      <ol>
+        <li>
+          Cost savings: You don’t spend large sums on purchasing equipment but
+          only pay for actual usage.
+        </li>
+        <li>
+          Flexible rental terms: We offer rentals from a few hours to long-term
+          periods – from days to months.
+        </li>
+        <li>
+          Modern equipment: Our 2-ton forklifts are equipped with all necessary
+          features for comfortable and safe operation.
+        </li>
+        <li>
+          Support and maintenance: In case of a breakdown, we quickly fix the
+          issue or provide a replacement.
+        </li>
+      </ol>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Features of a 3.5-Ton Forklift
+      </div>
+      <div class="">
+        A 2-ton forklift is a versatile tool capable of performing a wide range
+        of tasks. Its key advantages include:
+      </div>
+      <ul>
+        <li>
+          Lifting capacity of up to 3.5 tonss: Suitable for handling large volumes
+          of heavy cargo.
+        </li>
+        <li>
+          Compact design: Convenient for use in small warehouses with narrow
+          aisles.
+        </li>
+        <li>
+          High productivity: Enables fast loading and unloading operations.
+        </li>
+        <li>Multi-functionality: Suitable for both indoor and outdoor use.</li>
+        <li>
+          Ergonomic design: Comfortable control and high maneuverability ensure
+          operator ease even during long hours of work.
+        </li>
+      </ul>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Our 3.5-Ton Forklift Rental Services
+      </div>
+      <div class="">
+        We offer 2-ton forklift rentals in Tashkent under the most favorable
+        conditions. You will receive high-quality equipment with a full package
+        of services:
+      </div>
+      <ul>
+        <li>Technical maintenance before rental.</li>
+        <li>Delivery of equipment to the worksite.</li>
+        <li>Option to rent with a professional operator.</li>
+      </ul>
+      <div class="">
+        We pay special attention to the technical condition of our equipment,
+        ensuring reliability and uninterrupted operation on-site.
+      </div>
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        How to Rent a 3.5-Ton Forklift?
+      </div>
+      <div class="">The rental process is simple and transparent:</div>
+      <ol>
+        <li>
+          Call or submit a request: Contact us to discuss the details and
+          requirements.
+        </li>
+        <li>
+          Consultation: We help you choose the optimal forklift model and
+          determine rental terms.
+        </li>
+        <li>
+          Rental agreement: Once all details are agreed upon, we sign a contract
+          specifying the rental period and cost.
+        </li>
+        <li>
+          Equipment delivery: The forklift is delivered to the specified
+          location on time.
+        </li>
+        <li>
+          Forklift return: After the rental period ends, we inspect the
+          equipment and complete the process.
+        </li>
+      </ol>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Why Choose Us?
+      </div>
+      <div class="">
+        Renting a 2-ton forklift from our company is the choice of
+        professionals. We take pride in our experience and personalized approach
+        to every client. Our key advantages:
+      </div>
+      <ul>
+        <li>Transparent pricing: No hidden fees or extra charges.</li>
+        <li>
+          Quality guarantee: Only modern forklifts that have passed technical
+          inspection.
+        </li>
+        <li>Fast service: Quick delivery of equipment anywhere in Tashkent.</li>
+        <li>
+          Flexible conditions: We adapt to your requirements, offering both
+          short-term and long-term rentals.
+        </li>
+        <li>
+          Professionalism: Our team is always ready to assist and answer all
+          your questions.
+        </li>
+      </ul>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Frequently Asked Questions About 3.5-Ton Forklift Rental
+      </div>
+      <div class="fw-semibold text-black">
+        1. How long can I rent a 2-ton forklift?
+      </div>
+      <div>
+        You can rent a forklift for any period: from a few hours to months.
+      </div>
+      <div class="fw-semibold text-black">
+        2. What information is needed to rent a forklift?
+      </div>
+      <div>
+        To sign a contract, you need to provide the work location, rental
+        period, and the type of tasks to be performed.
+      </div>
+      <div class="fw-semibold text-black">
+        3. Can I rent a forklift with an operator?
+      </div>
+      <div>
+        Yes, we offer experienced operators who can efficiently handle any job.
+      </div>
+      <div class="fw-semibold text-black">
+        4. Is equipment delivery included in the rental cost?
+      </div>
+      <div>
+        Delivery is discussed individually and can be included in the total
+        rental fee.
+      </div>
+      <div class="fw-semibold text-black">
+        5. What should I do if the forklift breaks down?
+      </div>
+      <div>
+        We will provide a replacement forklift or quickly fix the issue.
+      </div>
+
+      <!-- ========== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        How to Place an Order?
+      </div>
+      <div>
+        To rent a 2-ton forklift in Tashkent, contact us by phone or leave a
+        request on our website. Our specialists will help you choose the right
+        equipment and ensure prompt delivery.
+      </div>
+      <div>
+        Don’t miss the opportunity to simplify your work with a modern 2-ton
+        forklift. Contact us today, and we will provide the best rental
+        conditions.
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row align-items-center gap-3 gap-md-0">
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start"
+          >
+            <a href="../index-eng.html">
+              <img src="../assets/images/Logo AB-01 1@2x.png" alt="" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="d-flex align-items-center text-white gap-5">
+              <a
+                href="../index-eng.html"
+                style="text-decoration: none; color: white"
+                >Home</a
+              >
+              <a
+                href="../index-eng.html"
+                style="text-decoration: none; color: white"
+                >Services</a
+              >
+              <a
+                href="../index-eng.html"
+                style="text-decoration: none; color: white"
+                >Review</a
+              >
+              <a
+                href="../index-eng.html"
+                style="text-decoration: none; color: white"
+                >Contact</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="d-flex justify-content-center gap-4 gap-md-0 align-items-center flex-md-column align-items-md-end"
+            >
+              <div class="text-white">+998(99)-868-80-80</div>
+              <div class="gap-4 d-flex mt-2">
+                <a href="#" style="text-decoration: none; color: white">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: white">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: white">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-white mt-4">
+          © Copyright 2024 . All rights reserved
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const offcanvasLinks = document.querySelectorAll(".offcanvas-close");
+      offcanvasLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const offcanvas = document.querySelector(".offcanvas");
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+          bsOffcanvas.hide(); // Offcanvas-ni yopish
+        });
+      });
+    </script>
+    <!-- my js -->
+    <script src="script.js"></script>
+  </body>
+</html>

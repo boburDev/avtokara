@@ -1,58 +1,63 @@
 [
   {
-    "name": "Forklift 2 tons",
+    "name": "2-ton forklift",
     "price": "150,000 UZS/hour",
-    "min_order": "Minimum order of 4 hours",
+    "min_order": "Minimum order – 4 hours",
     "image": "./assets/images/image 5.png",
     "detail_link": "./Details/car1.html"
   },
   {
-    "name": "Forklift 3 tons",
+    "name": "3-ton forklift",
     "price": "250,000 UZS/hour",
-    "min_order": "Minimum order of 4 hours",
+    "min_order": "Minimum order – 4 hours",
     "image": "./assets/images/image-removebg-preview (3) 1.png",
     "detail_link": "./Details/car2.html"
   },
   {
-    "name": "Forklift 3.5 tons",
+    "name": "3.5-ton forklift",
     "price": "300,000 UZS/hour",
-    "min_order": "Minimum order of 4 hours",
+    "min_order": "Minimum order – 4 hours",
     "image": "./assets/images/image-removebg-preview (6) 1.png",
     "detail_link": "./Details/car3.html"
   },
   {
-    "name": "Forklift 5 tons",
+    "name": "5-ton forklift",
     "price": "350,000 UZS/hour",
-    "min_order": "Minimum order of 4 hours",
+    "min_order": "Minimum order – 4 hours",
     "image": "./assets/images/image-removebg-preview (7) 1.png",
     "detail_link": "./Details/car4.html"
   },
   {
-    "name": "Forklift 7 tons",
+    "name": "7-ton forklift",
     "price": "400,000 UZS/hour",
-    "min_order": "Minimum order of 4 hours",
+    "min_order": "Minimum order – 4 hours",
     "image": "./assets/images/image-removebg-preview-new.png",
     "detail_link": "./Details/car5.html"
   },
   {
-    "name": "Forklift 10 tons",
+    "name": "10-ton forklift",
     "price": "550,000 UZS/hour",
-    "min_order": "Minimum order of 4 hours",
+    "min_order": "Minimum order – 4 hours",
     "image": "./assets/images/image-removebg-preview (8) 1.png",
     "detail_link": "./Details/car6.html"
   },
   {
     "name": "Tow truck service",
     "price": "400,000 UZS/hour",
-    "min_order": "One call (5 km free, waiting time 100,000 per hour)",
+    "min_order": "One call ( waiting time 100,000 UZS/hour)",
+    "extra": "(5 km free, waiting time 100,000 UZS/hour)",
     "image": "./assets/images/image 3.png",
-    "detail_link": "./Details/car7.html"
+    "detail_link": "#evacuator-service",
+    "type": "button",
+    "category": "car_deliver"
   },
   {
     "name": "Tow truck service",
     "price": "400,000 UZS/hour",
-    "min_order": "One call (5 km free)",
+    "min_order": "One call ( waiting time 100,000 UZS/hour)",
+    "extra": "(5 km free, waiting time 100,000 UZS/hour)",
     "image": "./assets/images/image 4.png",
-    "detail_link": "./Details/car8.html"
+    "detail_link": "#evacuator-service",
+    "type": "button"
   }
 ]

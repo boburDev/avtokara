@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abduraxim Building</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/Logo AB-01 1.png"
+    />
+
+    <!-- bootstrap js -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+    ></script>
+
+    <script>
+      // URL parametrlarini o‘qish
+      const urlParams = new URLSearchParams(window.location.search);
+      const image = urlParams.get("image");
+      const name = urlParams.get("name");
+      const price = urlParams.get("price");
+
+      // Sahifada kerakli joylarga ma'lumotni qo‘shish
+      document.getElementById("detail-image").src = image;
+      document.getElementById("detail-name").textContent = name;
+      document.getElementById("detail-price").textContent = `${price} сум/час`;
+    </script>
+  </head>
+  <body>
+    <div
+      class="position-sticky my_navbar mysticky top-0 left-0 bg-white"
+      style="z-index: 999999"
+    >
+      <nav class="navbar container w-full navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index-uzb.html">
+            <img src="../assets/images/Logo AB-01 1@2x.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <a class="navbar-brand" href="../index-uzb.html">
+                <img src="./assets/images/Logo AB-01 1.png" alt="" />
+              </a>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0 gap-lg-5">
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-uzb.html"
+                    >Uy</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-uzb.html"
+                    >Xizmatlar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-uzb.html"
+                    >Ko‘rib chiqish</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link offcanvas-close" href="../index-uzb.html"
+                    >Aloqa</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex gap-2">
+                <div
+                  class="rounded bg-light d-flex px-4 py-2 gap-2 justify-content-center"
+                >
+                  <div>
+                    <i class="fa-solid fa-phone text-success"></i>
+                  </div>
+                  <div class="fw-bold">+998(99)-868-80-80</div>
+                </div>
+                <div id="language" class="language">
+                  <a href="#">
+                    <img
+                      src="../assets/images/uz.png"
+                      width="50"
+                      height="40"
+                      alt="UZB"
+                    />
+                  </a>
+                  <a href="./car4_en.html">
+                    <img
+                      src="../assets/images/en.png"
+                      width="40"
+                      height="30"
+                      alt="ENG"
+                    />
+                  </a>
+                  <a href="./car4.html">
+                    <img
+                      src="../assets/images/ru.png"
+                      width="50"
+                      height="40"
+                      alt="RU"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row" style="font-size: 18px">
+        <div class="col-12 col-lg-7">
+          <div
+            style="
+              width: 100%;
+              height: 450px;
+              overflow: hidden;
+              border-radius: 15px;
+            "
+            class="bg-light d-flex justify-content-center align-items-center"
+          >
+            <img
+              class="w-75"
+              src="../assets/images/image-removebg-preview (7) 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div style="font-size: 23px" class="fw-semibold pb-4">
+            Forklift xizmatlari uchun narxlar
+          </div>
+          <div class="mt-2">Narx: <span>350,000 so'm/soatiga.</span></div>
+          <div class="mt-2">Minimal buyurtma 4 soatdan.</div>
+          <div class="mt-2">
+            8 soat: 3 400 000 so'm (200 000 so'mni tejash).
+          </div>
+          <div class="mt-2">
+            Mashinani shahar ichida yetkazib berish narxga kiritilgan.
+          </div>
+          <div style="font-size: 23px" class="fw-semibold mt-5 pb-4">
+            Forkliftning xususiyatlari
+          </div>
+          <div class="mt-2">Yuk ko'tarish qobiliyati 2000 kg gacha.</div>
+          <div class="mt-2">Ko'tarish balandligi 3000 mm gacha.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-secondary">
+      <!-- ========= -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Toshkentda 5 tonnalik yuk ko'taruvchi forklift ijarasi
+      </div>
+      <div class="">
+        Toshkentda 5 tonnalik forklift ijarasi — bu ombor va yuk ko'tarish
+        ishlari uchun ishonchli texnikaga muhtoj bo'lgan kompaniyalar uchun
+        amaliy yechimdir. Bizning kompaniyamizda zamonaviy va qudratli 2
+        tonnalik forkliftlarni topishingiz mumkin, ular sizga paletlarni
+        tushirish yoki qurilish materiallarini ko‘chirish kabi turli vazifalarni
+        bajarishda yordam beradi.
+      </div>
+      <div class="">
+        Biz forklift ijarasi xizmatlarini taqdim etib, biznesingiz uchun optimal
+        sharoit yaratamiz: moslashuvchan ijaraga olish muddati, individual
+        yondashuv va yuqori sifatli xizmat ko'rsatish kafolatlanadi.
+      </div>
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Nega aynan 5 tonnalik forklift tanlanadi?
+      </div>
+      <div class="">
+        5 tonnalik forklift kuch, manevrlik va universal qo‘llash imkoniyatiga
+        ega. U quyidagi sohalar uchun juda mos keladi:
+      </div>
+      <ul>
+        <li>
+          Ombor logistikasi: Og'ir yuklarni ko'chirish, joylashtirish va yuklash
+          uchun ideal.
+        </li>
+        <li>
+          Qurilish maydonchalari: G'isht, beton bloklar va boshqa qurilish
+          materiallarini ko'chirish uchun ishlatiladi.
+        </li>
+        <li>Sanoat: Og'ir uskunalar va detallar bilan ishlash uchun zarur.</li>
+        <li>
+          Transport logistikasi: Transport markazlarida yuklarni samarali
+          yuklash va tushirish imkonini beradi.
+        </li>
+      </ul>
+      <div class="">
+        5 tonnalik forkliftni ishlatish ish unumdorligini sezilarli darajada
+        oshirishga yordam beradi. Bunday texnikani ijaraga olish esa vaqt va
+        mablag'ni tejashni istagan kompaniyalar uchun foydali tanlov bo‘ladi.
+      </div>
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        5 tonnalik forklift ijarasining afzalliklari
+      </div>
+      <div class="">
+        Agar siz forklift sotib olishni rejalashtirayotgan bo‘lsangiz, lekin
+        uning yuqori narxi sababli ikkilanayotgan bo‘lsangiz, 5 tonnalik
+        forkliftni ijaraga olish ajoyib alternativa bo‘lishi mumkin. Buning
+        qanday afzalliklari bor?
+      </div>
+      <ol>
+        <li>
+          Budjetni tejash. Siz qimmat texnika sotib olish uchun katta mablag'
+          sarflamaysiz, faqat foydalanish muddati uchun to‘laysiz.
+        </li>
+        <li>
+          Moslashuvchan ijara muddati. Biz qisqa muddatli (bir necha soatlik) va
+          uzoq muddatli (kun, oy) ijarani taklif qilamiz.
+        </li>
+        <li>
+          Zamonaviy uskunalar. Bizning 5 tonnalik forkliftlarimiz qulay va
+          xavfsiz ishlash uchun barcha zarur funksiyalar bilan jihozlangan.
+        </li>
+        <li>
+          Xizmat va qo‘llab-quvvatlash. Agar nosozlik yuzaga kelsa, biz uni
+          tezda tuzatamiz yoki texnikani almashtirib beramiz.
+        </li>
+      </ol>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        5 tonnalik forkliftning o‘ziga xos xususiyatlari
+      </div>
+      <div class="">
+        5 tonnalik forklift ko‘plab vazifalarni bajarishga qodir universal
+        texnikadir. Uning asosiy afzalliklari:
+      </div>
+      <ul>
+        <li>
+          5 tonnagacha yuk ko'tarish quvvati. Og‘ir yuklarni ko‘chirish uchun
+          ideal.
+        </li>
+        <li>Kompakt o‘lcham. Tor omborlarda ishlash uchun qulay.</li>
+        <li>
+          Yuqori samaradorlik. Yuklash va tushirish ishlarini tez bajara oladi.
+        </li>
+        <li>
+          Ko‘p maqsadli foydalanish. Ichki binolar va ochiq maydonlarda
+          ishlashga mos.
+        </li>
+        <li>
+          Ergonomika. Oson boshqarish va yuqori manevrlik uzoq ishlash
+          jarayonida ham qulaylik yaratadi.
+        </li>
+      </ul>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Bizning 5 tonnalik forklift ijara xizmatlarimiz
+      </div>
+      <div class="">
+        Biz Toshkentda eng qulay shartlarda 5 tonnalik forklift ijarasini taklif
+        qilamiz. Siz quyidagi xizmatlardan foydalanishingiz mumkin:
+      </div>
+      <ul>
+        <li>Ijara oldidan texnik xizmat ko‘rsatish.</li>
+        <li>Uskunani belgilangan joyga yetkazib berish.</li>
+        <li>
+          Forkliftni professional operator bilan ijaraga olish imkoniyati.
+        </li>
+      </ul>
+      <div class="">
+        Biz texnikaning holatiga katta e’tibor qaratamiz, bu esa uning
+        ishonchliligi va uzluksiz ishlashini kafolatlaydi.
+      </div>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Forkliftni qanday qilib ijaraga olish mumkin?
+      </div>
+      <div class="">Ijara jarayoni juda oddiy:</div>
+      <ol>
+        <li>
+          Qo‘ng‘iroq yoki ariza. Biz bilan bog‘lanib, texnikaga bo‘lgan
+          talablaringizni aniqlashtiring.
+        </li>
+        <li>
+          Maslahat. Biz sizga mos keladigan forklift modelini tanlashda yordam
+          beramiz.
+        </li>
+        <li>
+          Ijara shartnomasi. Muddat va narx bo‘yicha kelishuvdan so‘ng, rasmiy
+          hujjat tuziladi.
+        </li>
+        <li>
+          Texnikaning yetkazib berilishi. Forklift siz belgilagan vaqtda va
+          joyga yetkaziladi.
+        </li>
+        <li>
+          Texnikani qaytarish. Ijara muddati tugagach, forklift qaytarilib,
+          jarayon yakunlanadi.
+        </li>
+      </ol>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Nima uchun bizni tanlashadi?
+      </div>
+      <ul>
+        <li>Shaffof narxlar. Yashirin to‘lovlar yo‘q.</li>
+        <li>Yuqori sifat kafolati. Faqat sinovdan o‘tgan zamonaviy texnika.</li>
+        <li>Tezkor yetkazib berish. Toshkent bo‘ylab tezkor xizmat.</li>
+        <li>
+          Quvvatli texnik qo‘llab-quvvatlash va moslashuvchan ijara shartlari.
+        </li>
+        <li>Mutaxassislarning yordami va konsultatsiyasi.</li>
+      </ul>
+
+      <!-- ======== -->
+      <div style="font-size: 23px" class="fw-semibold mt-5 pb-2 text-black">
+        Buyurtmani qanday qilish mumkin?
+      </div>
+      <div>
+        Toshkentda 5 tonnalik forkliftni ijaraga olish uchun biz bilan
+        bog‘laning yoki saytimiz orqali ariza qoldiring.
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row align-items-center gap-3 gap-md-0">
+          <div
+            class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start"
+          >
+            <a href="../index-uzb.html">
+              <img src="../assets/images/Logo AB-01 1@2x.png" alt="" />
+            </a>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-center">
+            <div class="d-flex align-items-center text-white gap-5">
+              <a
+                href="../index-uzb.html"
+                style="text-decoration: none; color: white"
+                >Uy</a
+              >
+              <a
+                href="../index-uzb.html"
+                style="text-decoration: none; color: white"
+                >Xizmatlar</a
+              >
+              <a
+                href="../index-uzb.html"
+                style="text-decoration: none; color: white"
+                >Ko'rib chiqish</a
+              >
+              <a
+                href="../index-uzb.html"
+                style="text-decoration: none; color: white"
+                >Aloqa</a
+              >
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div
+              class="d-flex justify-content-center gap-4 gap-md-0 align-items-center flex-md-column align-items-md-end"
+            >
+              <div class="text-white">+998(99)-868-80-80</div>
+              <div class="gap-4 d-flex mt-2">
+                <a href="#" style="text-decoration: none; color: white">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: white">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: white">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-white mt-4">
+          © Copyright 2024 . All rights reserved
+        </div>
+      </div>
+    </div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+      const offcanvasLinks = document.querySelectorAll(".offcanvas-close");
+      offcanvasLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          const offcanvas = document.querySelector(".offcanvas");
+          const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+          bsOffcanvas.hide(); // Offcanvas-ni yopish
+        });
+      });
+    </script>
+    <!-- my js -->
+    <script src="script.js"></script>
+  </body>
+</html>

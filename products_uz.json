@@ -1,58 +1,63 @@
 [
   {
-    "name": "Avtokar 2 tonna",
+    "name": "2 tonnalik avtocar",
     "price": "150 000 so‘m/soat",
-    "min_order": "Minimal buyurtma 4 soatdan",
+    "min_order": "Minimal buyurtma – 4 soat",
     "image": "./assets/images/image 5.png",
     "detail_link": "./Details/car1.html"
   },
   {
-    "name": "Avtokar 3 tonna",
+    "name": "3 tonnalik avtocar",
     "price": "250 000 so‘m/soat",
-    "min_order": "Minimal buyurtma 4 soatdan",
+    "min_order": "Minimal buyurtma – 4 soat",
     "image": "./assets/images/image-removebg-preview (3) 1.png",
     "detail_link": "./Details/car2.html"
   },
   {
-    "name": "Avtokar 3.5 tonna",
+    "name": "3.5 tonnalik avtocar",
     "price": "300 000 so‘m/soat",
-    "min_order": "Minimal buyurtma 4 soatdan",
+    "min_order": "Minimal buyurtma – 4 soat",
     "image": "./assets/images/image-removebg-preview (6) 1.png",
     "detail_link": "./Details/car3.html"
   },
   {
-    "name": "Avtokar 5 tonna",
+    "name": "5 tonnalik avtocar",
     "price": "350 000 so‘m/soat",
-    "min_order": "Minimal buyurtma 4 soatdan",
+    "min_order": "Minimal buyurtma – 4 soat",
     "image": "./assets/images/image-removebg-preview (7) 1.png",
     "detail_link": "./Details/car4.html"
   },
   {
-    "name": "Avtokar 7 tonna",
+    "name": "7 tonnalik avtocar",
     "price": "400 000 so‘m/soat",
-    "min_order": "Minimal buyurtma 4 soatdan",
+    "min_order": "Minimal buyurtma – 4 soat",
     "image": "./assets/images/image-removebg-preview-new.png",
     "detail_link": "./Details/car5.html"
   },
   {
-    "name": "Avtokar 10 tonna",
+    "name": "10 tonnalik avtocar",
     "price": "550 000 so‘m/soat",
-    "min_order": "Minimal buyurtma 4 soatdan",
+    "min_order": "Minimal buyurtma – 4 soat",
     "image": "./assets/images/image-removebg-preview (8) 1.png",
     "detail_link": "./Details/car6.html"
   },
   {
     "name": "Evakuator xizmati",
     "price": "400 000 so‘m/soat",
-    "min_order": "Bitta chaqiruv (5 km bepul, kutish vaqti 100 ming/soat)",
+    "min_order": "Bitta chaqiruv (1 soat kutish 100 ming so‘m)",
+    "extra": "(5 km bepul, kutish vaqti 100 ming so‘m/soat)",
     "image": "./assets/images/image 3.png",
-    "detail_link": "./Details/car7.html"
+    "detail_link": "#evacuator-service",
+    "type": "button",
+    "category": "car_deliver"
   },
   {
     "name": "Evakuator xizmati",
     "price": "400 000 so‘m/soat",
-    "min_order": "Bitta chaqiruv (5 km bepul)",
+    "min_order": "Bitta chaqiruv (1 soat kutish 100 ming so‘m)",
+    "extra": "(5 km bepul, kutish vaqti 100 ming so‘m/soat)",
     "image": "./assets/images/image 4.png",
-    "detail_link": "./Details/car8.html"
+    "detail_link": "#evacuator-service",
+    "type": "button"
   }
 ]
