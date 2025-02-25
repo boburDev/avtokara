@@ -72,63 +72,6 @@ document
     } catch (error) {}
   });
 
-//   const htmlLang = document.documentElement.lang; // HTML lang atributini olish
-
-//   const jsonFile = `products_${htmlLang}.json`; // Mos JSON faylni tanlash
-
-//   fetch(jsonFile)
-//     .then((response) => {
-//       if (!response.ok) throw new Error("Fayl topilmadi");
-//       return response.json();
-//     })
-//     .then((products) => {
-//       const productList = document.getElementById("product-list");
-//       productList.innerHTML = ""; // Avvalgi mahsulotlarni tozalash
-
-//       products.forEach((product) => {
-//         const productCard = document.createElement("div");
-//         productCard.classList.add("products-card");
-
-//         productCard.innerHTML = `
-//               <div class="car-detail-img">
-//                   <img class="w-100" src="${product.image}" alt="${product.name}" />
-//               </div>
-//               <div class="text-center mt-5" style="font-size: 19px; font-weight: 500">
-//                   ${product.name}
-//               </div>
-//               <div class="text-center mt-1" style="font-size: 19px; font-weight: 500">
-//                   ${product.price}
-//               </div>
-//               <div class="text-center mt-1" style="font-size: 19px; font-weight: 500">
-//                   ${product.min_order}
-//               </div>
-//               <a class='detail-button' href="${product.detail_link}">
-//                   <button>Подробнее</button>
-//               </a>
-//           `;
-
-//         productList.appendChild(productCard);
-//       });
-
-//       // Owl Carousel-ni qayta ishga tushirish
-//       if (window.jQuery) {
-//         $("#product-list").owlCarousel("destroy"); // Oldingi carousel'ni tozalash
-//         $("#product-list").owlCarousel({
-//           items: 4.5,
-//           itemsDesktop: [1024, 3],
-//           itemsDesktopSmall: [980, 2.5],
-//           itemsTablet: [768, 2],
-//           itemsTabletSmall: [600, 1],
-//           pagination: true,
-//           autoPlay: true,
-//         });
-//       } else {
-//         console.error("jQuery is not loaded.");
-//       }
-//     })
-//     .catch((error) => console.error("Ошибка загрузки JSON:", error));
-// });
-
 // styled
 document.addEventListener("DOMContentLoaded", function () {
   const htmlLang = document.documentElement.lang; // HTML lang atributini olish
@@ -197,3 +140,12 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Ошибка загрузки JSON:", error));
 });
+
+// chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+//   if (message.action === "doSomething") {
+//     console.log("Received message:", message);
+
+//     sendResponse({ status: "success" }); // Ensure a response is always sent
+//   }
+//   return true; // Keeps the message port open for async operations
+// });
